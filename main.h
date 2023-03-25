@@ -9,7 +9,7 @@
 /*functions*/
 int _printf(const char *format, ...);
 int parse(const char *format, va_list);
-_write(char c);
+int _write(char c);
 int p_char(va_list);
 int P_int(va_list);
 int P_string(va_list)
