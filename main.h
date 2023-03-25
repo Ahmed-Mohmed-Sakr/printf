@@ -12,7 +12,7 @@ int parse(const char *format, va_list);
 int _write(char c);
 int p_char(va_list);
 int P_int(va_list);
-int P_string(va_list)
+int P_string(va_list);
 
 
 #endif /*MAIN_H*/
