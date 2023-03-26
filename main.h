@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+#include <unistd.h>
 /*functions*/
 int _printf(const char *format, ...);
 int parse(const char *format, va_list);
