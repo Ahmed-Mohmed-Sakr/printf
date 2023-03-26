@@ -18,6 +18,7 @@ int parse(const char *format, va_list  list)
 		{"s", p_string},
 		{"d", p_int},
 		{"i", p_int},
+		{"%", p_persent},
 		{NULL, NULL}
 		};
 

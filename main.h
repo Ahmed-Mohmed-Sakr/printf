@@ -13,6 +13,7 @@ int _write(char c);
 int p_char(va_list);
 int p_int(va_list);
 int p_string(va_list);
+int p_persent(va_list);
 
 /**
 * struct _map - defines a structure for symbols and functions
