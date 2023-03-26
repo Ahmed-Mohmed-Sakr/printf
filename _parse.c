@@ -49,6 +49,7 @@ int parse(const char *format, va_list  list)
 				{
 					_write(format[h]);
 					_write(format[h + 1]);
+					num_char += 2;
 				}
 				else
 					/* only %*/
