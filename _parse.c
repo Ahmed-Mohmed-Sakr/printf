@@ -37,5 +37,26 @@ int parse(const char *format, va_list  list)
 					break;
 				}
 			}
-			
+			/*%k should print as %k */
+			if (type_list[d].op == NULL && format[h + 1] != ' ')
+			{
+				if (format[h + 1] != '\0')
+				{
+					_write(format[h]);
+					_write(format[h + 1]);
+				}
+				else
+					/* only %*/
+					return (-1);
+			}
+			h++;
+		}
+		else
+		{
+			/*normal string*/
+			_write(format[h]);
+			num_char++;
+		}
+	}
+	return (num_char);
 }
