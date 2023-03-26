@@ -15,6 +15,9 @@ int p_int(va_list list)
 
 	n = va_arg(list, int);
 
+	if (n == NULL)
+		return (1);
+
 	if (n < 0)
 	{
 		_write('-');
