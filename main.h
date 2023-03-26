@@ -14,5 +14,17 @@ int p_char(va_list);
 int p_int(va_list);
 int p_string(va_list);
 
+/**
+* struct _map - defines a structure for symbols and functions
+*
+* @op: The operator
+* @f: The function associated
+*/
+struct _map
+{
+	char *op;
+	int (*f)(va_list);
+};
+typedef struct _map struct_map;
 
 #endif /*MAIN_H*/
