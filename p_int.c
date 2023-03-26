@@ -11,7 +11,7 @@ int p_int(va_list list)
 {
 	int n;
 	long int rev = 10;
-	int len = 0
+	int len = 0;
 
 	n = va_arg(list, int);
 
