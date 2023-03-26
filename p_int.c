@@ -29,7 +29,7 @@ int p_int(va_list list)
 
 	while (rev > 10)
 	{
-		_write(rev % 10);
+		_write('0' + rev % 10);
 		rev /= 10;
 	}
 
