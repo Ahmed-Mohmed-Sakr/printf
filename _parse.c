@@ -12,11 +12,11 @@
 
 int parse(const char *format, va_list  list)
 {
-	_map type_list[] = {
+	struct_map type_list[] = {
 		{"c", p_char},
 		{"s", p_string},
 		{"d", p_int},
-		{"i", p_int}
+		{"i", p_int},
 		{NULL, NULL}
 		};
 
