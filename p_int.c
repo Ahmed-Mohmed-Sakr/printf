@@ -10,11 +10,16 @@
  */
 int p_int(va_list list)
 {
-	int i;
 	int n;
 	long int rev = 10;
 
 	n = va_arg(list, int);
+
+	if (n < 0)
+	{
+		_write('-');
+		n *= -1
+	}
 
 	while (n > 0)
 	{
