@@ -12,6 +12,7 @@
 
 int parse(const char *format, va_list  list)
 {
+	/*to redirect each exist char to it's own function*/
 	struct_map type_list[] = {
 		{"c", p_char},
 		{"s", p_string},
@@ -22,14 +23,18 @@ int parse(const char *format, va_list  list)
 
 	int h, d, num_char = 0, find_f;
 
+	/*loop on each symbol in format*/
 	for (h = 0; format[h] != '\0'; h++)
 	{
+		/*if symbol is % it meaning that there is dataType should refer to maybe*/
 		if (format[h] == '%')
 		{
+			/*search for all exist dataType %c %s %d %i*/
 			for (d = 0; type_list[d].op != NULL; d++)
 			{
 				if (format[h + 1] == type_list[d].op[0])
 				{
+					/*redirect symbol to it's appropriate function*/
 					find_f = type_list[d].f(list);
 					if (find_f == -1)
 						return (find_f);
