@@ -5,8 +5,7 @@
  *
  * @list: list of arg.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: len of char printed.
  */
 int p_string(va_list list)
 {
@@ -19,5 +18,6 @@ int p_string(va_list list)
 	{
 		_write(s[i]);
 	}
-	return (1);
+
+	return (i);
 }

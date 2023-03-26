@@ -10,5 +10,7 @@
  */
 int p_char(va_list list)
 {
-	return (_write(va_arg(list, int)));
+	_write(va_arg(list, int));
+
+	return (1);
 }
