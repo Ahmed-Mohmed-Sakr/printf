@@ -7,7 +7,7 @@
  *
  * Return: num len.
  */
-int p_int(va_list list)
+int p_unsigned_int(va_list list)
 {
 	unsigned int n;
 	long int rev = 1;
@@ -20,6 +20,9 @@ int p_int(va_list list)
 		_write('0');
 		return (1);
 	}
+
+	if (n < 1)
+		return (-1);
 
 	while (n > 0)
 	{
