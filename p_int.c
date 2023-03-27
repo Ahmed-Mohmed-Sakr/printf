@@ -11,7 +11,7 @@ int p_int(va_list list)
 {
 	unsigned int n;
 	int y;
-	long int rev = 10;
+	long int rev = 1;
 	int len = 0;
 
 	y = va_arg(list, int);
@@ -39,7 +39,7 @@ int p_int(va_list list)
 		n /= 10;
 	}
 
-	while (rev > 10)
+	while (rev > 1)
 	{
 		_write('0' + rev % 10);
 		rev /= 10;
