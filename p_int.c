@@ -9,23 +9,28 @@
  */
 int p_int(va_list list)
 {
-	int n;
+	unsigned int n;
+	int y;
 	long int rev = 10;
 	int len = 0;
 
-	n = va_arg(list, int);
+	y = va_arg(list, int);
 
-	if (n == 0)
+	if (y == 0)
 	{
 		_write('0');
 		return (1);
 	}
 
-	if (n < 0)
+	if (y < 0)
 	{
 		_write('-');
 		len++;
-		n *= -1;
+		n = y * -1;
+	}
+	else
+	{
+		n = y;
 	}
 
 	while (n > 0)
