@@ -10,7 +10,7 @@
 int p_int(va_list list)
 {
 	int n;
-	long int rev = 10;
+	long int rev = 1;
 	int len = 0;
 
 	n = va_arg(list, int);
@@ -34,7 +34,7 @@ int p_int(va_list list)
 		n /= 10;
 	}
 
-	while (rev > 10)
+	while (rev > 1)
 	{
 		_write('0' + rev % 10);
 		rev /= 10;
