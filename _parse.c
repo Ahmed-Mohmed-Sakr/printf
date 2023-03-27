@@ -15,6 +15,7 @@ struct_map *functionsList()
 		{"d", p_int},
 		{"i", p_int},
 		{"%", p_persent},
+		{"b", p_binary},
 		{NULL, NULL}
 	};
 	return (type_list);
