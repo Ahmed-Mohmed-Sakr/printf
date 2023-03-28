@@ -18,8 +18,6 @@ struct_map *functionsList()
 		{"b", p_binary},
 		{"u", p_unsigned_int},
 		{"o", p_octal},
-		{"x", p_hex},
-		{"X", p_hex_},
 		{NULL, NULL}
 	};
 	return (type_list);
