@@ -14,6 +14,10 @@ int p_int(va_list);
 int p_string(va_list);
 int p_persent(va_list);
 int p_binary(va_list);
+int p_unsigned_int(va_list);
+int p_octal(va_list);
+int p_hex(va_list);
+int p_hex_(va_list);
 
 /**
 * struct _map - defines a structure for symbols and functions
